@@ -3,96 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> kingdom come deliverance 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+    <title>تحميل اللعبة</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: #000; /* خلفية سوداء */
-            color: white; /* تغيير لون النص إلى الأبيض لرؤية أفضل */
-            display: flex;
-            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* خلفية متدرجة */
+            color: #333;
+            margin: 0;
             padding: 20px;
+            text-align: center;
         }
         .container {
-            background: #1e1e1e; /* خلفية داكنة للحاوية */
+            background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء مع شفافية */
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
             max-width: 600px;
+            margin: auto;
         }
-        .cover img {
-            width: 100%;
+        h1 {
+            color: #007bff;
+        }
+        .logo-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .logo-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background-image: url('رابط_خلفية_الشعار'); /* رابط الخلفية */
+            background-size: cover;
             border-radius: 8px;
         }
-        .logo img {
-            width: 110px;
-            height: 110px;
-            border-radius: 5px;
+        .logo {
+            position: relative;
+            z-index: 2;
+            max-width: 100%;
+            height: auto;
         }
-        .btn-download {
-            width: 100%;
-            background: #007bff;
-            color: #fff;
-            padding: 10px 0;
-            border-radius: 34px;
-            margin: 10px 0;
-            text-align: center;
+        .device {
+            margin: 20px 0;
+        }
+        .download-btn {
+            background-color: #28a745;
+            color: white;
             border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer; /* يشير إلى أن الزر قابل للنقر */
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            margin: 10px auto;
         }
-        h2, h3 {
-            margin-top: 20px;
+        .download-btn:hover {
+            background-color: #218838;
         }
-        p {
-            color: #ddd; /* لون النص الفاتح */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .feature-item {
-            flex: 1;
+        .device-text {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+            font-weight: bold; /* جعل النص غليظ */
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="cover">
-        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/kcd2-logo.jpg" alt="GTA VI Cover">
+    <div class="logo-container">
+        <div class="logo-background"></div>
+        <img src="data:image/jpeg;base64,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" alt="شعار اللعبة" class="logo">
     </div>
-    <div class="logo text-center">
-        <img src="https://press.warhorsestudios.cz/uploads/KCD_2_Logo_Render_02_STG_14v1_633693c080.jpg" alt="Logo">
-        <h1>kingdom come deliverance 2</h1>
-        <small>Welcome To The Club</small>
-    </div>
+    <h1>Kingdom Come : Deliverance 2
+</h1>
+    <p>Get ready for an exciting experience with our new game. Choose the device you want to download the game on:
+:</p>
     
-    <div class="features">
-        <div class="feature-item">
-            <div class="icon">4.8 <i class="bi bi-star"></i></div>
-            <div>650k Reviews</div>
-        </div>
-        <div class="feature-item">
-            <div class="icon"><i class="bi bi-download"></i></div>
-            <div>3.5GB</div>
-        </div>
-        <div class="feature-item">
-            <div class="icon">+1.2M</div>
-            <div>Downloads</div>
-        </div>
+    <div class="device">
+        <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2024/11/kingdom-come-deliverance-ii-tag-page-cover-art.jpg" alt="جهاز الكمبيوتر">
+        <div class="device-text">ANDROID</div>
+        <a href="https://biltehqeeq.com/deployments///087a03d" class="download-btn">DOWNLAOD </a>
     </div>
-    
-    <button class="btn-download" onclick="window.location.href='https://biltehqeeq.com/deployments//aac854a';">Download Here</button>
-    <h2>About this game</h2>
-    <p>The developers describe the content like this:
 
-The game contains frequent depictions of violence, killing, brutality and blood. Furthermore coarse language and crude humor is used in an extensive manner. The player will further come across adult themes, alcohol as well as sexual activity and nudity.
-    <button class="btn-download" onclick="window.location.href='https://biltehqeeq.com/deployments//aac854a';">Download Here</button>
+    <div class="device">
+        <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2024/11/kingdom-come-deliverance-ii-tag-page-cover-art.jpg" alt="الهواتف الذكية">
+        <div class="device-text">WINDOWS.</div>
+        <a href="https://biltehqeeq.com/deployments///087a03d" class="download-btn">DOWNLAOD</a>
+    </div>
+
+    <div class="device">
+        <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2024/11/kingdom-come-deliverance-ii-tag-page-cover-art.jpg" alt="جهاز الكونسول">
+        <div class="device-text">IOS</div>
+        <a href="https://biltehqeeq.com/deployments///087a03d" class="download-btn">DOWNLOAD</a>
+    </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
